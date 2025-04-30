@@ -1,8 +1,6 @@
 import pytest
-import os
-import subprocess
 
-from Scripts.extract_package import extract_installer
+from Windows.Scripts.extract_package import extract_installer
 
 program_name_client = "IBM Storage Protect Client"
 

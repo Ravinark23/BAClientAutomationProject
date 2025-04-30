@@ -1,5 +1,5 @@
 import winrm
-from Commons.utils import *
+from Windows.Common.commons import load_config
 
 config = load_config()
 machine = config["machine"]
@@ -12,7 +12,7 @@ password=machine['password']
 s = winrm.Session(f'http://{hostname}:5985/wsman', auth=(username, password))
 
 # Contents of requirements.txt
-with open('/Users/ravina/PycharmProjects/BAClientAutomationProject/requirements.txt', 'r') as file:
+with open('/requirements.txt', 'r') as file:
     requirements_content = file.read()
 
 # PowerShell script to install packages from the above content
@@ -36,7 +36,7 @@ Write-Output "Installed packages successfully."
 
 # Path to your script on your Mac
 #local_script_path = '/Users/ravina/PycharmProjects/BAClientAutomationProject/main.py'
-local_script_path = '/Users/ravina/PycharmProjects/BAClientAutomationProject/Scripts/install_package.py'
+local_script_path = '/Windows/Scripts/install_package.py'
 
 
 # Read the contents of the Python script

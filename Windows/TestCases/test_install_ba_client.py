@@ -1,8 +1,6 @@
 import pytest
-import os
-import subprocess
 
-from Scripts.install_ba_client import is_program_installed, install_ba_client
+from Windows.Scripts.install_ba_client import is_program_installed, install_ba_client
 
 program_name_client = "IBM Storage Protect Client"
 
