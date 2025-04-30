@@ -1,0 +1,27 @@
+machine:
+  operating_system: "Windows 22"
+  hostname: "rkclient.storage.tucson.ibm.com"
+  ip: "9.11.53.61"
+  username: "onecloud-user"
+  password: "74xG9UhGUp29CW!"
+
+client_config:
+  node_name: "RKCLIENT"
+  node_password: "password@12345!"
+  port: 1500
+  sp_server: "gijoe.storage.tucson.ibm.com"
+  sp_username: "spadmin"
+  sp_password: "sppass"
+  dsm_file_name: "dsm.opt"
+  dsm_file_path: "C:\\Program Files\\Tivoli\\TSM\\baclient"
+  backup_folder: "C:\\BackupTest"
+  files_to_create:
+    - "file1.txt"
+    - "file2.txt"
+package_details:
+  gsa_username: "rkgsa"
+  gsa_password: "snoG21zO8aBKVm2b"
+  package_install_url: "https://tucgsa.ibm.com/projects/t/tsmc_test/continuous/client/v8126/windows/20250312A/x64/8.1.26.0-20250312A-TIV-TSMBAC-WinX64.exe"
+  package_name: "8.1.26.0-20250312A-TIV-TSMBAC-WinX64.exe"
+  download_path: "C:\\Users\\onecloud-user\\Downloads"
+

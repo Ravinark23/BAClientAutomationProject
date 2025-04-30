@@ -1,0 +1,11 @@
+pywinauto
+pytest
+pywinauto
+requests
+pywinrm
+pyyaml
+requests
+py7zr
+
+
+
